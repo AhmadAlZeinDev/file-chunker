@@ -1,2 +1,2 @@
-# video-chunk-splitter
-Video Chunk Splitter
+# file-chunker
+File Chunker

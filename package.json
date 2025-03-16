@@ -1,0 +1,25 @@
+{
+  "name": "file-chunker",
+  "version": "1.0.0",
+  "description": "File Chunker",
+  "type": "commonjs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmad Al-Zein",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.13.10",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  }
+}
