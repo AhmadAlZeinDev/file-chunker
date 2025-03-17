@@ -1,7 +1,7 @@
 {
-  "name": "file-chunker",
+  "name": "file-chunkify",
   "version": "1.0.0",
-  "description": "File Chunker",
+  "description": "File Chunkify",
   "type": "commonjs",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -14,27 +14,19 @@
   "scripts": {
     "build": "tsup"
   },
-  "author": {
-    "name": "Ahmad Al-Zein",
-    "email": "ahmadalzein267@gmail.com",
-    "url": "https://linkedin.com/in/ahmad-al-zein"
+  "bugs": {
+    "url": "https://github.com/AhmadAlZeinDev/file-chunkify/issues"
   },
+  "author": "Ahmad Al-Zein <ahmadalzein267@gmail.com> (https://linkedin.com/in/ahmad-al-zein)",
   "keywords": [
     "file",
     "chunk",
+    "slice",
     "split",
     "upload",
     "merge",
-    "file-chunking",
-    "file-upload",
-    "chunk-upload",
-    "video-upload",
-    "large-file-upload",
-    "file-split",
-    "merge-files",
-    "file-processing",
-    "nodejs",
-    "typescript"
+    "video",
+    "large-file"
   ],
   "license": "MIT",
   "devDependencies": {

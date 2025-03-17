@@ -1,4 +1,4 @@
-# file-chunker
+# file-chunkify
 
 A lightweight file chunking utility for splitting and merging large files in both frontend (browser) and backend (Node.js).
 
@@ -12,7 +12,7 @@ A lightweight file chunking utility for splitting and merging large files in bot
 
 Install via npm:
 ```sh
-npm install file-chunker
+npm install file-chunkify
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ npm install file-chunker
 Use `splitFile` to break a large file into chunks before uploading:
 
 ```ts
-import { splitFile } from "file-chunker";
+import { splitFile } from "file-chunkify";
 
 const fileInput = document.querySelector("input[type='file']");
 fileInput.addEventListener("change", async (event) => {
@@ -37,7 +37,7 @@ fileInput.addEventListener("change", async (event) => {
 Use `saveChunk` to store received chunks and merge them:
 
 ```ts
-import { saveChunk } from "file-chunker";
+import { saveChunk } from "file-chunkify";
 import express from "express";
 import multer from "multer";
 
