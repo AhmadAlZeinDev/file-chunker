@@ -26,7 +26,7 @@ async function* splitFile({
       chunkNumber,
       totalChunks,
       fileName,
-      uploadProgress: Math.ceil(((chunkNumber + 1) / totalChunks) * 100),
+      progress: Math.ceil(((chunkNumber + 1) / totalChunks) * 100),
     };
     chunkNumber++;
     start = end;
