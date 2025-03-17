@@ -3,6 +3,14 @@ export interface SplitFileOptions {
   chunkSize?: number;
 }
 
+export interface SplitFileResult {
+  chunk: Blob;
+  chunkNumber: number;
+  totalChunks: number;
+  fileName: string;
+  progress: number;
+}
+
 function generateUUID(): string {
   return `${Date.now()}-${Math.floor(Math.random() * 1e9)}`;
 }
@@ -10,7 +18,7 @@ function generateUUID(): string {
 async function* splitFile({
   file,
   chunkSize = 5 * 1024 * 1024,
-}: SplitFileOptions) {
+}: SplitFileOptions): AsyncGenerator<SplitFileResult> {
   const totalChunks = Math.ceil(file.size / chunkSize);
   const fileName = `${generateUUID()}.${
     file ? file.name.split(".").pop() : "file"

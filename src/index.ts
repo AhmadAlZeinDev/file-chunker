@@ -1,2 +1,2 @@
-export { splitFile, SplitFileOptions } from "./split-file";
-export { saveChunk, SaveChunkOptions } from "./merge-file";
+export { splitFile, SplitFileOptions, SplitFileResult } from "./split-file";
+export { saveChunk, SaveChunkOptions, SaveChunkResult } from "./merge-file";

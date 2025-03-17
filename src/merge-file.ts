@@ -25,13 +25,19 @@ export interface SaveChunkOptions {
   chunkDir?: string;
 }
 
+export interface SaveChunkResult {
+  success: boolean;
+  message: string;
+  mergedFilePath?: string;
+}
+
 async function saveChunk({
   file,
   chunkNumber,
   totalChunks,
   outputDir = "./uploads",
   chunkDir = "./uploads/chunks",
-}: SaveChunkOptions) {
+}: SaveChunkOptions): Promise<SaveChunkResult> {
   const extension = path.extname(file.originalname);
   const fileName = path.basename(file.originalname, extension);
   chunkNumber = Number(chunkNumber);
