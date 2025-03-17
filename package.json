@@ -12,8 +12,7 @@
     "os": false
   },
   "scripts": {
-    "build": "tsup",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup"
   },
   "author": {
     "name": "Ahmad Al-Zein",
@@ -24,20 +23,18 @@
     "file",
     "chunk",
     "split",
-    "file-chunker",
-    "file-split",
-    "file-merge",
-    "chunked-upload",
+    "upload",
+    "merge",
+    "file-chunking",
+    "file-upload",
+    "chunk-upload",
+    "video-upload",
     "large-file-upload",
+    "file-split",
+    "merge-files",
     "file-processing",
-    "multipart-upload",
-    "file-streaming",
-    "file-optimization",
-    "typescript",
     "nodejs",
-    "frontend",
-    "backend",
-    "file-handling"
+    "typescript"
   ],
   "license": "MIT",
   "devDependencies": {
