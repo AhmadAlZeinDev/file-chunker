@@ -77,7 +77,7 @@ Splits a file into chunks.
 | --------- | ------ | -------- | ------------------------------------- |
 | file      | File   | Required | The file to be split.                 |
 | chunkSize | number | 5MB      | The size of each chunk.               |
-| options   | object | Optional | Additional options, including logger. |
+| options   | object | Optional | Additional options, including debugMode. |
 
 #### **Returns:**
 
