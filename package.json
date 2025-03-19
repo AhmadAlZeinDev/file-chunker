@@ -1,11 +1,13 @@
 {
   "name": "file-chunkify",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "File Chunkify",
-  "type": "commonjs",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+ ],
   "browser": {
     "fs": false,
     "path": false,
@@ -13,6 +15,10 @@
   },
   "scripts": {
     "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AhmadAlZeinDev/file-chunkify"
   },
   "bugs": {
     "url": "https://github.com/AhmadAlZeinDev/file-chunkify/issues"
